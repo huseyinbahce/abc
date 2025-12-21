@@ -2,7 +2,7 @@ const causeCatalog = {
   1: {
     title: 'Bant yay yapmış (kavis almış) olabilir.',
     solution:
-      'Bant rodadayken yanlara kayıp “teleskop” yapmasına izin vermeyin ve nemli ortamlarda depolamayın. Yeni bir bant, devreye alındıktan sonra kısa sürede düzgün hale gelmelidir; düzgünleşmiyorsa bant değiştirilmelidir.',
+      'Bant rulodayken yanlara kayıp “teleskop” yapmasına izin vermeyin ve nemli ortamlarda depolamayın. Yeni bir bant, devreye alındıktan sonra kısa sürede düzgün hale gelmelidir; düzgünleşmiyorsa bant değiştirilmelidir.',
   },
   2: {
     title: 'Bant eki hatalı yapılmış veya yanlış mekanik ek kullanılmış olabilir.',
@@ -16,8 +16,8 @@ const causeCatalog = {
       'Bant yeniyse bir süre çalışıp oturmasını bekleyin. Bu durum devam ediyorsa (veya bant yeni değilse), fazla gerilen kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
   },
   5: {
-    title: 'Bantta yırtılma önleyici katman mevcut değil veya yetersiz olabilir.',
-    solution: 'Uygulamaya uygun yırtılma önleyici katı olan bant tercih edin.',
+    title: 'Bantta breaker katı mevcut değil veya yetersiz olabilir.',
+    solution: 'Uygulamaya uygun breaker katı olan bant tercih edin.',
   },
   6: {
     title: 'Gerdirme ağırlığı gereğinden fazla olabilir.',
@@ -33,7 +33,7 @@ const causeCatalog = {
     solution:
       'Çalışma koşuluna uygun bant seçin. Mekanik ek varsa metal kısımları sızdırmaz kaplamayla koruyun; mümkünse vulkanize ek tercih edin. Bandı güneş, yağmur gibi dış etkenlerden koruyun. Ekipmanları aşırı yağlamaktan kaçının.',
   },
-  9: { title: 'İkili tahrik mevcutsa tamburların hız uyumu yanlış olabilir.', solution: 'Gerekli hız düzeltmesini yapın' },
+  9: { title: 'İkili tahrik mevcutsa tamburların hız uyumu yanlış olabilir.', solution: 'Gerekli hız düzeltmesini yapın.' },
   10: {
     title: 'Tahrik sistemine göre yetersiz mukavemette bant seçilmiş olabilir.',
     solution:
@@ -71,7 +71,7 @@ const causeCatalog = {
   26: { title: 'Malzeme bant merkezine beslenmiyor olabilir.', solution: 'Malzemeyi bantın gidiş yönünde ve bant merkezine gelecek şekilde yükleyin.' },
   27: { title: 'Etek lastikleri yanlış konumlandırılmış veya bakımı yapılmamış olabilir.', solution: 'Bandı aşındırmayacak tipte etek lastikleri kullanın ve belli aralıklarla bakımlarını gerçekleştirin.' },
   28: { title: 'Aşınma plakaları kullanılmıyor olabilir. Kullanılıyorsa yıpranmış veya hatalı monte edilmiş olabilir.', solution: 'Aşınma plakalarını, bantın gidiş yönünde kenarları kademeli geçiş yapacak ve düzgün hizalanacak şekilde yenileyin.' },
-  29: { title: 'Bant kapasitesinin üzerinde yükleniyor olabilir.', solution: 'Beslemeyi dizayn kapasitesinde veya daha düşük kapasitede çalıştırın.' },
+  29: { title: 'Bant kapasitesinin üzerinde yükleniyor olabilir.', solution: 'Beslemeyi tasarım kapasitesinde veya daha düşük kapasitede çalıştırın.' },
   30: { title: 'Bantta normalden fazla sarkma olabilir.', solution: 'Gerdirme (take-up) gerilimini yeniden hesaplayıp ayarlayın. Sarkmayı azaltmak için ilave bant destek elemanları kullanın veya rulo istasyonu aralıklarını düşürün.' },
   31: { title: 'Konveyör durduktan sonra bant geri kaçıyor olabilir.', solution: 'Geri kaçırmayı önleyen tutucu (holdback) veya fren sistemi kullanın; mevcutsa bakımlarını gerçekleştirin.' },
   32: { title: 'Sıyırıcı sayısı yetersiz olabilir ya da sıyırıcı bakımı aksıyor olabilir.', solution: 'İlave sıyırıcı ekleyin veya bakım sıklığını artırın.' },
