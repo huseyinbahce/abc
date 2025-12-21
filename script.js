@@ -11,18 +11,18 @@ const causeCatalog = {
   },
   3: { title: 'Bant çok hızlı olabilir.', solution: 'Bant çalışma hızını düşürün.' },
   4: {
-    title: 'Belt strained on one side',
+    title: 'Bant tek taraftan uzamış olabilir.',
     solution:
-      'Allow time for a new belt to break in. If strain remains or the belt is not new, remove the strained section and splice in a new piece.',
+      'Bant yeniyse bir süre çalışıp oturmasını bekleyin. Tek taraflı uzama devam ediyorsa (veya bant yeni değilse), uzayan kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
   },
   5: {
     title: 'Breaker strip missing or inadequate',
     solution: 'When service is lost, install a belt with the proper breaker strip.',
   },
   6: {
-    title: 'Counterweight too heavy',
+    title: 'Gerdirme ağırlığı gereğinden fazla olabilir.',
     solution:
-      'Recalculate required weight and adjust the counterweight. Reduce takeup tension until just before slip, then tighten slightly.',
+      'Gerekli ağırlığı yeniden hesaplayın ve ayarlayın. Gerdirme gerilimini, kayma başlayacak noktaya gelene kadar azaltın; sonra çok az artırarak güvenli seviyede bırakın.',
   },
   7: {
     title: 'Counterweight too light',
@@ -91,7 +91,7 @@ const problems = [
   { title: 'Bant gereğinden fazla uzama yapıyor.', codes: [13, 10, 21, 6, 9], image: '' },
   { title: 'Mekanik ek bölgesinde (veya hemen arkasında) bant yırtılıyor/kopuyor; mekanik ek yerinden sökülüp çıkıyor.', codes: [2, 23, 13, 22, 20, 10], image: '' },
   { title: 'Vulkanize ek yerinde ayrılma meydana geliyor.', codes: [13, 23, 10, 20, 2, 9], image: '' },
-  { title: 'Bantta yırtık, yarılma, kopma ve kesikler dâhil olmak üzere ciddi kaplama problemleri oluşuyor.', codes: [12, 25, 17, 21, 8, 5], image: '' },
+  { title: 'Bant kaplamasında yırtık, yarılma, kopma ve kesikler gibi ciddi problemler oluşuyor.', codes: [12, 25, 17, 21, 8, 5], image: '' },
   { title: 'Bant alt kaplaması normalden fazla aşınıyor.', codes: [21, 14, 5, 19, 20, 22], image: '' },
   { title: 'Bant kenarlarında normalden fazla aşınma oluşuyor.', codes: [26, 4, 17, 8, 1, 21], image: '' },
   { title: 'Kaplamada nokta nokta veya çizgi halinde şişmeler oluşuyor.', codes: [8], image: '' },
