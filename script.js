@@ -1,15 +1,15 @@
 const causeCatalog = {
   1: {
-    title: 'Belt bowed',
+    title: 'Bant yay yapmış (kavis almış) olabilir.',
     solution:
-      'Avoid telescoping belt rolls or storing them in damp locations. A new belt should straighten out when broken in, otherwise replace it.',
+      'Bant rodadayken yanlara kayıp “teleskop” yapmasına izin vermeyin ve nemli ortamlarda depolamayın. Yeni bir bant, devreye alındıktan sonra kısa sürede düzgün hale gelmelidir; düzgünleşmiyorsa bant değiştirilmelidir.',
   },
   2: {
-    title: 'Belt improperly spliced or wrong fasteners',
+    title: 'Bant eki hatalı yapılmış veya yanlış mekanik ek kullanılmış olabilir.',
     solution:
-      'Use correct fasteners and re-tighten after a short run. If the splice is wrong, remove and redo it, then set up a regular inspection schedule.',
+      'Bandınıza uygun mekanik ek kullanın ve bandı kısa süre çalıştırdıktan sonra bağlantıları tekrar sıkın. Ek hatalı yapıldıysa çıkarıp yeni ek yapın, ardından düzenli kontrol için bir periyodik denetim planı oluşturun.',
   },
-  3: { title: 'Belt speed too fast', solution: 'Reduce belt speed.' },
+  3: { title: 'Bant çok hızlı olabilir.', solution: 'Bant çalışma hızını düşürün.' },
   4: {
     title: 'Belt strained on one side',
     solution:
@@ -62,42 +62,42 @@ const causeCatalog = {
     solution:
       'Increase wrap with snub pulleys, lag the drive pulley (use grooved lagging when wet), and install proper cleaning devices. See also counterweight settings.',
   },
-  20: { title: 'Material between belt and pulley', solution: 'Use skirtboards properly, remove buildup, and improve maintenance.' },
-  21: { title: 'Material build-up', solution: 'Remove accumulation. Install cleaning devices, scrapers, and inverted “V” decking. Improve housekeeping.' },
-  22: { title: 'Pulley lagging worn', solution: 'Replace worn lagging, use grooved lagging for wet conditions, and tighten loose or protruding bolts.' },
-  23: { title: 'Pulleys too small', solution: 'Use larger diameter pulleys.' },
-  24: { title: 'Radius of convex vertical curve too small', solution: 'Increase the radius through vertical realignment of idlers to limit edge tension.' },
-  25: { title: 'Relative loading velocity too high or too low', solution: 'Adjust chutes or correct belt speed; consider impact idlers.' },
-  26: { title: 'Side loading', solution: 'Load in the direction of belt travel and centered on the conveyor.' },
-  27: { title: 'Skirts improperly placed or not maintained', solution: 'Install skirtboards that do not rub the belt and maintain them regularly.' },
-  28: { title: 'Wear liners missing, worn or improperly installed', solution: 'Replace wear liners with properly aligned, gradually relieving edges in the direction of travel.' },
-  29: { title: 'Belt overloaded', solution: 'Operate the feed system at design capacity or below.' },
-  30: { title: 'Excessive belt sag', solution: 'Recalculate takeup tension and add belt support systems or reduce idler spacing.' },
-  31: { title: 'Belt rolls back after shutdown', solution: 'Install or repair a belt holdback or brake.' },
-  32: { title: 'Insufficient number of belt cleaners or lack of maintenance', solution: 'Install more belt cleaners or increase maintenance frequency.' },
-  33: { title: 'Bulk material properties have changed', solution: 'If change is permanent, redesign chutes and cleaners, and re-evaluate conveyor speed, tension, and belt type.' },
-  34: { title: 'Emergency repairs or actions', solution: 'Replace temporary fixes with proper repairs and automate accessories where possible. Avoid heating or hammering components.' },
-  35: { title: 'Monitoring devices inoperable', solution: 'Repair or activate monitoring devices.' },
+  20: { title: 'Bant ve tambur arasına malzeme giriyor olabilir.', solution: 'Şut eteklerini doğru ayarlayın, biriken malzemeyi temizleyin ve bakım düzenini sıklaştırın.' },
+  21: { title: 'Malzeme birikiyor olabilir.', solution: 'Biriken malzemeyi ortadan kaldırın. Geri dönüş tarafında malzeme birikmesini azaltmak için sıyırıcılar ekleyin. Saha temizliği ve düzenini iyileştirin.' },
+  22: { title: 'Tambur kaplamaları aşınmış olabilir.', solution: 'Aşınmış tambur kaplamalarını değiştirin. Islak koşullarda yivli tambur kaplaması kullanın.' },
+  23: { title: 'Tambur çapları olması gerekenden küçük olabilir.', solution: 'Daha büyük çaplı tamburlar kullanın.' },
+  24: { title: 'Konveks dikey geçiş yarıçapı gereğinden küçük olabilir.', solution: 'Kenar gerilimini azaltmak için ruloların düşey hizasını yeniden düzenleyerek geçiş yarıçapını büyütün.' },
+  25: { title: 'Bağıl besleme hızı gereğinden yüksek veya düşük olabilir.', solution: 'Şutları ayarlayın veya bant hızını doğru seviyeye getirin. Gerekirse besleme bölgesinde darbe ruloları kullanmayı değerlendirin. },
+  26: { title: 'Malzeme bant merkezine beslenmiyor olabilir.', solution: 'Malzemeyi bantın gidiş yönünde ve bant merkezine gelecek şekilde yükleyin.' },
+  27: { title: 'Etek lastikleri yanlış konumlandırılmış veya bakımı yapılmamış olabilir.', solution: 'Bandı aşındırmayacak tipte etek lastikleri kullanın ve belli aralıklarla bakımlarını gerçekleştirin.' },
+  28: { title: 'Aşınma plakaları kullanılmıyor olabilir. Kullanılıyorsa yıpranmış veya hatalı monte edilmiş olabilir.', solution: 'Aşınma plakalarını, bantın gidiş yönünde kenarları kademeli geçiş yapacak ve düzgün hizalanacak şekilde yenileyin.' },
+  29: { title: 'Bant kapasitesinin üzerinde yükleniyor olabilir.', solution: 'Beslemeyi dizayn kapasitesinde veya daha düşük kapasitede çalıştırın.' },
+  30: { title: 'Bantta normalden fazla sarkma olabilir.', solution: 'Gerdirme (take-up) gerilimini yeniden hesaplayıp ayarlayın. Sarkmayı azaltmak için ilave bant destek elemanları kullanın veya rulo istasyonu aralıklarını düşürün.' },
+  31: { title: 'Konveyör durduktan sonra bant geri kaçıyor olabilir.', solution: 'Geri kaçırmayı önleyen tutucu (holdback) veya fren sistemi kullanın; mevcutsa bakımlarını gerçekleştirin.' },
+  32: { title: 'Sıyırıcı sayısı yetersiz olabilir ya da sıyırıcı bakımı aksıyor olabilir.', solution: 'İlave sıyırıcı ekleyin veya bakım sıklığını artırın.' },
+  33: { title: 'Yığın malzeme özellikleri değişmiş olabilir.', solution: 'Değişiklik kalıcıysa şutları ve sıyırıcıları yeni koşullara göre yeniden düzenleyin. Ayrıca konveyör hızını, bant gergisini ve bant tipini (kaplama/karkas) yeniden değerlendirin.' },
+  34: { title: 'Acil geçici çözümler uygulanmış olabilir.', solution: 'Geçici çözümler yerine kalıcı onarımlara başvurun. Mümkün olan noktalarda ekipmanları/aksesuarları otomatik hale getirin. Ekipmanlara ısı vererek ya da çekiçle vurarak müdahale etmeyin.' },
+  35: { title: 'Bant izleme cihazları çalışmıyor veya işlevlerini yerine getirmiyor olabilir.', solution: 'Bant izleme cihazlarını aktif edin; gerekiyorsa tamir edin.' },
 };
 
 const problems = [
   { title: 'Bant kuyruk tamburunda merkezden kayıyor.', codes: [7, 15, 14, 17, 21, 34], image: 'https://www.konveyorbant.com/wp-content/uploads/2025/12/tail-1-2.png' },
-  { title: 'Bant konveyörün her noktasında merkezden kayıyor.', codes: [26, 17, 15, 21, 4, 16], image: 'https://www.konveyorbant.com/wp-content/uploads/2025/12/tail-1.png' },
+  { title: 'Bant konveyörün her noktasında merkezden kayıyor.', codes: [26, 17, 15, 21, 4, 16], image: '' },
   { title: 'Bantın belli bir bölümü konveyörün her noktasında merkezden kayıyor.', codes: [2, 11, 1, 34], image: '' },
   { title: 'Bant kafa tamburunda merkezden kayıyor.', codes: [15, 22, 21, 16, 34], image: '' },
-  { title: 'Belt runs to one side throughout entire length at specific idlers', codes: [15, 16, 21, 34], image: '' },
-  { title: 'Belt slip', codes: [19, 7, 21, 14, 22], image: '' },
-  { title: 'Belt slip on starting', codes: [19, 7, 22, 10], image: '' },
-  { title: 'Excessive belt stretch', codes: [13, 10, 21, 6, 9], image: '' },
-  { title: 'Belt breaks at or behind fasteners or fasteners tear loose', codes: [2, 23, 13, 22, 20, 10], image: '' },
-  { title: 'Vulcanized splice separation', codes: [13, 23, 10, 20, 2, 9], image: '' },
-  { title: 'Excessive belt wear including rips, gouges, ruptures and tears', codes: [12, 25, 17, 21, 8, 5], image: '' },
-  { title: 'Excessive belt bottom cover wear', codes: [21, 14, 5, 19, 20, 22], image: '' },
-  { title: 'Excessive belt edge wear, broken edges', codes: [26, 4, 17, 8, 1, 21], image: '' },
-  { title: 'Belt cover swells in spots or streaks', codes: [8], image: '' },
-  { title: 'Belt hardens or cracks', codes: [8, 23, 22, 18], image: '' },
-  { title: 'Belt covers become checked or brittle', codes: [8, 18], image: '' },
-  { title: 'Longitudinal grooving or cracking of belt top cover', codes: [27, 14, 21, 12], image: '' },
+  { title: 'Bant, belirli rulolarda merkezden kayıyor; kayma tüm bant boyunca görülüyor.', codes: [15, 16, 21, 34], image: '' },
+  { title: 'Bant patinaj yapıyor.', codes: [19, 7, 21, 14, 22], image: '' },
+  { title: 'Bant ilk kalkışta patinaj yapıyor.', codes: [19, 7, 22, 10], image: '' },
+  { title: 'Bant gereğinden fazla uzama yapıyor.', codes: [13, 10, 21, 6, 9], image: '' },
+  { title: 'Mekanik ek bölgesinde (veya hemen arkasında) bant yırtılıyor/kopuyor; mekanik ek yerinden sökülüp çıkıyor.', codes: [2, 23, 13, 22, 20, 10], image: '' },
+  { title: 'Vulkanize ek yerinde ayrılma meydana geliyor.', codes: [13, 23, 10, 20, 2, 9], image: '' },
+  { title: 'Bantta yırtık, yarılma, kopma ve kesikler dâhil olmak üzere ciddi kaplama problemleri oluşuyor.', codes: [12, 25, 17, 21, 8, 5], image: '' },
+  { title: 'Bant alt kaplaması normalden fazla aşınıyor.', codes: [21, 14, 5, 19, 20, 22], image: '' },
+  { title: 'Bant kenarlarında normalden fazla aşınma oluşuyor.', codes: [26, 4, 17, 8, 1, 21], image: '' },
+  { title: 'Kaplamada nokta nokta veya çizgi halinde şişmeler oluşuyor.', codes: [8], image: '' },
+  { title: 'Bant sertleşme veya çatlama yapıyor.', codes: [8, 23, 22, 18], image: '' },
+  { title: 'Bant kaplamasında gevrekleşme ve kılcal çatlamalar meydana geliyor.', codes: [8, 18], image: '' },
+  { title: 'Bant üst kaplamasında boylamasına oyuklar veya çatlamalar meydana geliyor.', codes: [27, 14, 21, 12], image: '' },
   { title: 'Bant alt kaplamasında uzunlamasına oluklaşma veya çatlaklar oluşuyor.', codes: [14, 21, 22], image: '' },
   { title: 'Bant karkasında bozunma, çatlak, yırtılma/kopma gibi hasarlı noktalar oluşuyor.', codes: [12, 20, 5, 10, 8, 24], image: '' },
   { title: 'Bant katmanlarında ayrılma yaşanıyor.', codes: [13, 23, 11, 8, 3], image: '' },
@@ -179,7 +179,7 @@ function selectCause(code, cloud) {
   solutionPanel.innerHTML = '';
   solutionPanel.classList.remove('active-card');
   const title = document.createElement('h5');
-  title.textContent = `Cause #${cloud.dataset.rank} · ${cause.title}`;
+  title.textContent = `Kök Neden #${cloud.dataset.rank} · ${cause.title}`;
   const body = document.createElement('p');
   body.className = 'solution-body';
   body.textContent = cause.solution;
