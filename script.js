@@ -16,8 +16,8 @@ const causeCatalog = {
       'Bant yeniyse bir süre çalışıp oturmasını bekleyin. Bu durum devam ediyorsa (veya bant yeni değilse), fazla gerilen kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
   },
   5: {
-    title: 'Breaker strip missing or inadequate',
-    solution: 'When service is lost, install a belt with the proper breaker strip.',
+    title: 'Bantta yırtılma önleyici katman mevcut değil veya yetersiz olabilir.',
+    solution: 'Uygulamaya uygun yırtılma önleyici katı olan bant tercih edin.',
   },
   6: {
     title: 'Gerdirme ağırlığı gereğinden fazla olabilir.',
@@ -29,19 +29,19 @@ const causeCatalog = {
     solution: 'Gerekli ağırlığı yeniden hesaplayın ve ayarlayın.',
   },
   8: {
-    title: 'Damage by abrasives, acid, chemicals, heat, mildew, oil',
+    title: 'Aşındırıcı malzeme, kimyasal, ısı veya yağ teması banda zarar veriyor olabilir.',
     solution:
-      'Use a belt designed for the specific condition. Patch cuts, seal metal fasteners, consider vulcanized splices, and protect the belt from weather. Avoid over-lubrication.',
+      'Çalışma koşuluna uygun bant seçin. Mekanik ek varsa metal kısımları sızdırmaz kaplamayla koruyun; mümkünse vulkanize ek tercih edin. Bandı güneş, yağmur gibi dış etkenlerden koruyun. Ekipmanları aşırı yağlamaktan kaçının.',
   },
-  9: { title: 'Differential speed wrong on dual pulleys', solution: 'Make the necessary adjustment.' },
+  9: { title: 'İkili tahrik mevcutsa tamburların hız uyumu yanlış olabilir.', solution: 'Gerekli hız düzeltmesini yapın' },
   10: {
-    title: 'Drive under-belted',
+    title: 'Tahrik sistemine göre yetersiz mukavemette bant seçilmiş olabilir.',
     solution:
-      'Recalculate maximum belt tensions and choose the correct belt. For over-extended lines, consider two-flight systems. Install a belt with proper flexibility if the carcass is too rigid.',
+      'Maksimum bant gerilimlerini yeniden hesaplayın ve buna uygun bant seçin. Hat çok uzunsa iki konveyöre bölmeyi (two-flight) değerlendirin. Karkas çok rijitse daha esnek bir bant tercih edin.',
   },
   11: {
-    title: 'Edge worn or broken',
-    solution: 'Repair the belt edge, or remove the worn section and splice in a new piece.',
+    title: 'Bant kenarı aşınmış veya kırılmış olabilir.',
+    solution: 'Bant kenarını onarın; gerekiyorsa aşınmış kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
   },
   12: {
     title: 'Malzeme banta (veya mekanik eke) aşırı darbe uyguluyor olabilir.',
@@ -51,16 +51,16 @@ const causeCatalog = {
   13: { title: 'Bantta gereğinden fazla gerilim olabilir.', solution: 'Gerekli gergiyi yeniden hesaplayıp ayarlayın. Vulkanize ekleri önerilen limitler içinde uygulayın.' },
   14: { title: 'Dönmeyen rulolar mevcut olabilir.', solution: 'Sıkışan ruloları yağlayın. Aşırı yağlamadan kaçınarak rulo bakım düzenini iyileştirin.' },
   15: { title: 'Rulolar veya tamburlar konveyörün merkez hattına göre gönye dışı kalmış olabilir.', solution: 'Rulo ve tamburları yeniden hizalayın. Güvenlik için tahdit anahtarı kullanmayı değerlendirin.' },
-  16: { title: 'Idlers improperly placed', solution: 'Relocate idlers or add additional ones to support the belt.' },
+  16: { title: 'Rulolar yanlış konumlandırılmış olabilir.', solution: 'Ruloları doğru konumlandırın veya bandı yeterlice desteklemek için ilave rulo istasyonları ekleyin.' },
   17: {
-    title: 'Improper loading or spillage',
-    solution: 'Load in the direction of belt travel at belt speed, centered on the belt. Control flow with feeders, chutes, and skirtboards.',
+    title: 'Besleme hatalı yapılıyor olabilir.',
+    solution: 'Malzemeyi bantın gidiş yönünde, mümkün olduğunca bant hızına yakın ve bant merkezine gelecek şekilde besleyin.',
   },
-  18: { title: 'Improper storage or handling', solution: 'Follow manufacturer guidance for storage and handling.' },
+  18: { title: 'Depolama veya taşıma hatalı yapılmış olabilir.', solution: 'Depolama ve taşıma işlemlerini bant üreticisinin önerdiği şekilde yapın.' },
   19: {
-    title: 'Insufficient traction between belt and pulley',
+    title: 'Bant ile tahrik tamburu arasında tutunma yetersiz olabilir.',
     solution:
-      'Increase wrap with snub pulleys, lag the drive pulley (use grooved lagging when wet), and install proper cleaning devices. See also counterweight settings.',
+      'Sarma açısını saptırma tamburunu kullanarak artırın. Tahrik tamburunu kaplayın ve uygun bant sıyırıcıları kullanın. Gergi ayarlarını kontrol edin.',
   },
   20: { title: 'Bant ve tambur arasına malzeme giriyor olabilir.', solution: 'Şut eteklerini doğru ayarlayın, biriken malzemeyi temizleyin ve bakım düzenini sıklaştırın.' },
   21: { title: 'Malzeme birikiyor olabilir.', solution: 'Biriken malzemeyi ortadan kaldırın. Geri dönüş tarafında malzeme birikmesini azaltmak için sıyırıcılar ekleyin. Saha temizliği ve düzenini iyileştirin.' },
