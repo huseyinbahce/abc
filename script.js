@@ -11,9 +11,9 @@ const causeCatalog = {
   },
   3: { title: 'Bant çok hızlı olabilir.', solution: 'Bant çalışma hızını düşürün.' },
   4: {
-    title: 'Bant tek taraftan uzamış olabilir.',
+    title: 'Bantın bir tarafı fazla geriliyor olabilir.',
     solution:
-      'Bant yeniyse bir süre çalışıp oturmasını bekleyin. Tek taraflı uzama devam ediyorsa (veya bant yeni değilse), uzayan kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
+      'Bant yeniyse bir süre çalışıp oturmasını bekleyin. Bu durum devam ediyorsa (veya bant yeni değilse), fazla gerilen kısmı kesip çıkarın ve yerine yeni bir parça ek yapın.',
   },
   5: {
     title: 'Breaker strip missing or inadequate',
@@ -25,8 +25,8 @@ const causeCatalog = {
       'Gerekli ağırlığı yeniden hesaplayın ve ayarlayın. Gerdirme gerilimini, kayma başlayacak noktaya gelene kadar azaltın; sonra çok az artırarak güvenli seviyede bırakın.',
   },
   7: {
-    title: 'Counterweight too light',
-    solution: 'Recalculate required weight and adjust counterweight or screw takeup as needed.',
+    title: 'Gerdirme ağırlığı yetersiz olabilir.',
+    solution: 'Gerekli ağırlığı yeniden hesaplayın ve ayarlayın.',
   },
   8: {
     title: 'Damage by abrasives, acid, chemicals, heat, mildew, oil',
@@ -44,13 +44,13 @@ const causeCatalog = {
     solution: 'Repair the belt edge, or remove the worn section and splice in a new piece.',
   },
   12: {
-    title: 'Excessive impact of material on belt or fasteners',
+    title: 'Malzeme banta (veya mekanik eke) aşırı darbe uyguluyor olabilir.',
     solution:
-      'Use correctly designed chutes and baffles, make vulcanized splices, install impact idlers, load fines first when possible, and adjust skirts or install cushioning idlers.',
+      'Besleme şutunu darbeyi azaltacak şekilde yeniden düzenleyin. Mümkünse mekanik ek yerine vulkanize ek tercih edin. Besleme bölgesinde darbe ruloları kullanın. Uygunsa bantı önce ince malzemeyle besleyin. Etek ayarlarını düzeltin.',
   },
-  13: { title: 'Excessive tension', solution: 'Recalculate and adjust tension. Use vulcanized splices within recommended limits.' },
-  14: { title: 'Frozen idlers', solution: 'Free and lubricate idlers, and improve maintenance while avoiding over-lubrication.' },
-  15: { title: 'Idlers or pulleys out-of-square with center line of conveyor', solution: 'Realign components and consider limit switches for safety.' },
+  13: { title: 'Bantta gereğinden fazla gerilim olabilir.', solution: 'Gerekli gergiyi yeniden hesaplayıp ayarlayın. Vulkanize ekleri önerilen limitler içinde uygulayın.' },
+  14: { title: 'Dönmeyen rulolar mevcut olabilir.', solution: 'Sıkışan ruloları yağlayın. Aşırı yağlamadan kaçınarak rulo bakım düzenini iyileştirin.' },
+  15: { title: 'Rulolar veya tamburlar konveyörün merkez hattına göre gönye dışı kalmış olabilir.', solution: 'Rulo ve tamburları yeniden hizalayın. Güvenlik için tahdit anahtarı kullanmayı değerlendirin.' },
   16: { title: 'Idlers improperly placed', solution: 'Relocate idlers or add additional ones to support the belt.' },
   17: {
     title: 'Improper loading or spillage',
@@ -67,7 +67,7 @@ const causeCatalog = {
   22: { title: 'Tambur kaplamaları aşınmış olabilir.', solution: 'Aşınmış tambur kaplamalarını değiştirin. Islak koşullarda yivli tambur kaplaması kullanın.' },
   23: { title: 'Tambur çapları olması gerekenden küçük olabilir.', solution: 'Daha büyük çaplı tamburlar kullanın.' },
   24: { title: 'Konveks dikey geçiş yarıçapı gereğinden küçük olabilir.', solution: 'Kenar gerilimini azaltmak için ruloların düşey hizasını yeniden düzenleyerek geçiş yarıçapını büyütün.' },
-  25: { title: 'Bağıl besleme hızı gereğinden yüksek veya düşük olabilir.', solution: 'Şutları ayarlayın veya bant hızını doğru seviyeye getirin. Gerekirse besleme bölgesinde darbe ruloları kullanmayı değerlendirin. },
+  25: { title: 'Bağıl besleme hızı gereğinden yüksek veya düşük olabilir.', solution: 'Şutları ayarlayın veya bant hızını doğru seviyeye getirin. Gerekirse besleme bölgesinde darbe ruloları kullanmayı değerlendirin.' },
   26: { title: 'Malzeme bant merkezine beslenmiyor olabilir.', solution: 'Malzemeyi bantın gidiş yönünde ve bant merkezine gelecek şekilde yükleyin.' },
   27: { title: 'Etek lastikleri yanlış konumlandırılmış veya bakımı yapılmamış olabilir.', solution: 'Bandı aşındırmayacak tipte etek lastikleri kullanın ve belli aralıklarla bakımlarını gerçekleştirin.' },
   28: { title: 'Aşınma plakaları kullanılmıyor olabilir. Kullanılıyorsa yıpranmış veya hatalı monte edilmiş olabilir.', solution: 'Aşınma plakalarını, bantın gidiş yönünde kenarları kademeli geçiş yapacak ve düzgün hizalanacak şekilde yenileyin.' },
